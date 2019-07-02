@@ -46,6 +46,9 @@
             this.btnSpin = new System.Windows.Forms.Button();
             this.lblResult = new System.Windows.Forms.Label();
             this.lblTest = new System.Windows.Forms.Label();
+            this.lblCredits = new System.Windows.Forms.Label();
+            this.lblBet = new System.Windows.Forms.Label();
+            this.lblWin = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblBox1
@@ -286,11 +289,41 @@
             this.lblTest.TabIndex = 17;
             this.lblTest.Text = "Nothing Yet";
             // 
+            // lblCredits
+            // 
+            this.lblCredits.AutoSize = true;
+            this.lblCredits.Location = new System.Drawing.Point(641, 141);
+            this.lblCredits.Name = "lblCredits";
+            this.lblCredits.Size = new System.Drawing.Size(63, 13);
+            this.lblCredits.TabIndex = 18;
+            this.lblCredits.Text = "Credits: 100";
+            // 
+            // lblBet
+            // 
+            this.lblBet.AutoSize = true;
+            this.lblBet.Location = new System.Drawing.Point(641, 180);
+            this.lblBet.Name = "lblBet";
+            this.lblBet.Size = new System.Drawing.Size(35, 13);
+            this.lblBet.TabIndex = 19;
+            this.lblBet.Text = "Bet: 5";
+            // 
+            // lblWin
+            // 
+            this.lblWin.AutoSize = true;
+            this.lblWin.Location = new System.Drawing.Point(641, 217);
+            this.lblWin.Name = "lblWin";
+            this.lblWin.Size = new System.Drawing.Size(41, 13);
+            this.lblWin.TabIndex = 20;
+            this.lblWin.Text = "Win:  0";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblWin);
+            this.Controls.Add(this.lblBet);
+            this.Controls.Add(this.lblCredits);
             this.Controls.Add(this.lblTest);
             this.Controls.Add(this.lblResult);
             this.Controls.Add(this.btnSpin);
@@ -311,6 +344,7 @@
             this.Controls.Add(this.lblBox1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -336,6 +370,9 @@
         private System.Windows.Forms.Button btnSpin;
         private System.Windows.Forms.Label lblResult;
         private System.Windows.Forms.Label lblTest;
+        private System.Windows.Forms.Label lblCredits;
+        private System.Windows.Forms.Label lblBet;
+        private System.Windows.Forms.Label lblWin;
     }
 }
 
